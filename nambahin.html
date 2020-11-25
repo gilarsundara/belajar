@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan JQuery nambahin</title>
+  </head>
+  <body>
+
+    <ol id="mantap">
+    </ol>
+
+    <button type="button" id="tombolBawah">Tambah bawah</button>
+    <button type="button" id="tombolAtas">Tambah atas</button>
+
+    <script type="text/javascript" src="jquery-3.js"></script>
+    <!-- <script type="text/javascript">
+        $('#mantap').html("<h1>LATIHAN</h1>");
+
+        $('#tombol').click(function(){
+          alert("Latihan JQuery")
+        });
+    </script> -->
+
+    <script type="text/javascript">
+
+        $('#tombolBawah').click(function(){
+          $('#mantap').append("<li>LATIHAN (bawah)</li>");
+        });
+
+        $('#tombolAtas').click(function(){
+          $('#mantap').prepend("<li>LATIHAN (atas)</li>");
+
+        });
+    </script>
+
+  </body>
+</html>

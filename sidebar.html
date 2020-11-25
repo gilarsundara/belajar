@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sidebar</title>
+
+    <style type="text/css">
+
+      #sidebar{
+      	position: fixed;
+        width: 200px;
+      	left: 0;
+      	height: 100%;
+        top: 0;
+      	padding-top: 20px;
+      	background: mediumblue;
+      	padding-left: 20px;
+        color: white;
+      }
+
+      .content{
+        margin-left: 250px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebarcontent">
+      </div>
+    </div>
+
+    <div class="content">
+      <button type="button" id="muncul">SHOW Sidebar</button>
+      <button type="button" id="hilang">HIDE Sidebar</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <hr>
+    </div>
+
+    <script type="text/javascript" src="jquery-3.js"></script>
+
+    <script type="text/javascript">
+          $("#sidebarcontent").html("<h2>Ini Sidebar</h2>");
+          $("#hilang").click(function(){
+            $("#sidebar").hide();
+          });
+          $("#muncul").click(function(){
+            $("#sidebar").show();
+          });
+    </script>
+
+
+  </body>
+</html>
